@@ -36,4 +36,9 @@ class CommentController(
 
         return saved
     }
+
+    @GetMapping
+    fun getCommentsByTaskId(@PathVariable taskId: Long): List<CommentDto> {
+        return commentService.getCommentsByTaskId(taskId)
+    }
 }

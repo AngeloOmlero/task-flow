@@ -34,6 +34,14 @@ class CommentService(
         return toCommentDto(savedComment)
     }
 
+    fun getCommentsByTaskId(taskId: Long): List<CommentDto> {
+        if (!taskRepository.existsById(taskId)) {
+            throw ResourceNotFoundException("Task with ID $taskId not found")
+        }
+        return commentRepository.findByTaskId(taskId).map(::toCommentDto)
+    }
+
+
     private fun toCommentDto(comment: Comment): CommentDto {
         val id = comment.id ?: throw IllegalStateException("Comment ID cannot be null.")
         val content = comment.content
