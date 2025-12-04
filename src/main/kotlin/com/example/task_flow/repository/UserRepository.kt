@@ -6,4 +6,7 @@ import org.springframework.data.jpa.repository.Query
 
 interface UserRepository: JpaRepository<User,Long> {
     fun findByUsername(username:String): User?
+
+    @Query("SELECT u FROM User u WHERE LOWER(u.username) LIKE LOWER(CONCAT('%', :query, '%'))")
+    fun searchUsers(query: String): List<User>
 }
