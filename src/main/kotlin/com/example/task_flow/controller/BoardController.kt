@@ -8,7 +8,7 @@ import com.example.task_flow.dto.CreateBoardDto
 import com.example.task_flow.dto.UpdateBoardDto
 import com.example.task_flow.exception.ForbiddenException
 import com.example.task_flow.service.BoardService
-import com.example.task_management.service.BroadcastService
+import com.example.task_flow.service.BroadcastService
 import jakarta.validation.Valid
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*

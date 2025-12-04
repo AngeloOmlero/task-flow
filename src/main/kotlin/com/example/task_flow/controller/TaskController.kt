@@ -6,8 +6,8 @@ import com.example.task_flow.dto.TaskDto
 import com.example.task_flow.dto.TaskUpdateMessageDto
 import com.example.task_flow.dto.UpdateTaskDto
 import com.example.task_flow.exception.ForbiddenException
-import com.example.task_management.service.BroadcastService
-import com.example.task_management.service.TaskService
+import com.example.task_flow.service.BroadcastService
+import com.example.task_flow.service.TaskService
 import jakarta.validation.Valid
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*

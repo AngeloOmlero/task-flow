@@ -6,7 +6,7 @@ import com.example.task_flow.dto.CommentUpdateMessageDto
 import com.example.task_flow.dto.CreateCommentDto
 import com.example.task_flow.exception.ForbiddenException
 import com.example.task_flow.service.CommentService
-import com.example.task_management.service.BroadcastService
+import com.example.task_flow.service.BroadcastService
 import jakarta.validation.Valid
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*

@@ -1,4 +1,4 @@
-package com.example.task_management.service
+package com.example.task_flow.service
 
 import org.springframework.messaging.simp.SimpMessagingTemplate
 import org.springframework.stereotype.Service
